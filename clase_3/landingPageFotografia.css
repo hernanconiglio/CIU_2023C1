@@ -1,0 +1,19 @@
+container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 30%;
+    margin: 1.4%;
+}
+
+p {
+    margin-left: 1.4%;
+    font-size: 40px;
+    font-family: "Titan One", cursive;
+    text-transform: uppercase; /* acá pongo el texto todo en mayúsculas */
+    border-bottom: 2px solid #e60e0e; /* acá pongo un borde de 2px de ancho y de color rojo */
+    padding-bottom: 20px; /* acá separo un poco el texto del borde de abajo usando padding-bottom y solo se de la línea */
+    width:44%;
+}

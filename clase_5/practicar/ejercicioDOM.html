@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ejercicio DOM</title>
+  <link rel="stylesheet" href=".\misEstilos.css" type="text/css">
+</head>
+<body>
+    <h1>Pagina ejercicio DOM</h1>
+    <div>
+        <h3>Este h3 está dentro de un div</h3>
+    </div>
+    <div id="source">
+        <h2>Este h2 está dentro de un div con id source</h2>
+    </div>
+    <div id="destination">
+        <h2>Este h2 está dentro de un div con id destination</h2>
+    </div>
+
+    <script>
+        var $div = document.querySelector("div");
+        var $h3 = document.querySelector("h3");
+        var $source = document.querySelector("#source");
+        var $destination = document.querySelector("#destination");
+        /*$div.style.height="200px"
+        $div.style.width="500px"
+        $div.style.background="blue"
+        */
+        //función que cada un segundo (setInterval()) se fije si tiene la clase square, si la tiene que se la quite, y si no la tiene la agregue.
+        setInterval(function(){
+            $div.classList.toggle("square")
+            if($destination.innerHTML == "Este h2 está dentro de un div con id destination"){
+                $destination.innerHTML=$source.innerHTML
+        } else {$destination.innerHTML="Este h2 está dentro de un div con id source"}},500)
+
+
+
+        
+
+    </script>
+</body>
+</html>

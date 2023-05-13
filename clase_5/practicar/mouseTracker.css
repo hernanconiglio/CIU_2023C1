@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+}
+
+#magic {
+    margin-top: 400px;
+}
